@@ -30,3 +30,20 @@ while the program is running.
 - `OUTPUT`
 - `digitalWrite()`
 - `HIGH` and `LOW`
+
+## Implementations
+
+- [C++ source](cpp/src/main.cpp) — Arduino framework with PlatformIO.
+- Rust — planned; no implementation yet.
+
+## Build and upload C++
+
+Open this experiment's `cpp/` folder in VS Code. See the
+[C++ setup guide](../docs/cpp-setup.md) for prerequisites and editor setup.
+
+From the repository root:
+
+```sh
+pio run -d 01-led-on/cpp
+pio run -d 01-led-on/cpp -t upload
+```

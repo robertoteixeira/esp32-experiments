@@ -42,3 +42,20 @@ more readable messages `Button released` and `Button pressed`.
 - Baud rate
 - PlatformIO Serial Monitor
 - Serial debugging
+
+## Implementations
+
+- [C++ source](cpp/src/main.cpp) — Arduino framework with PlatformIO.
+- Rust — planned; no implementation yet.
+
+## Build and upload C++
+
+Open this experiment's `cpp/` folder in VS Code. See the
+[C++ setup guide](../docs/cpp-setup.md) for prerequisites and editor setup.
+
+From the repository root:
+
+```sh
+pio run -d 04-button-serial/cpp
+pio run -d 04-button-serial/cpp -t upload
+```

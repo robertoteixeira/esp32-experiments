@@ -47,3 +47,20 @@ When the timer expires, the LED turns off and the Serial Monitor prints
 - State tracking
 - Resetting timers
 - Sensor-driven output
+
+## Implementations
+
+- [C++ source](cpp/src/main.cpp) — Arduino framework with PlatformIO.
+- Rust — planned; no implementation yet.
+
+## Build and upload C++
+
+Open this experiment's `cpp/` folder in VS Code. See the
+[C++ setup guide](../docs/cpp-setup.md) for prerequisites and editor setup.
+
+From the repository root:
+
+```sh
+pio run -d 07-pir-timer/cpp
+pio run -d 07-pir-timer/cpp -t upload
+```
